@@ -197,8 +197,8 @@ class Blogspot_com(Blogspot_com_base):
     domains = [
         'sslproxies24.blogspot.com',
         'proxyserverlist-24.blogspot.com',
-        'freeschoolproxy.blogspot.com',
-        'googleproxies24.blogspot.com',
+        #'freeschoolproxy.blogspot.com',
+        #'googleproxies24.blogspot.com',
     ]
 
 
@@ -764,9 +764,9 @@ PROVIDERS = [
     ),  # noqa; 140
     Xseo_in(proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # noqa; 240
     Spys_ru(proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # noqa; 660
-    Proxylistplus_com(
-        proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')
-    ),  # noqa; 450
+    # Proxylistplus_com(
+    #     proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')
+    # ),  # noqa; 450
     Proxylist_me(
         proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')
     ),  # noqa; 2872
@@ -784,10 +784,10 @@ PROVIDERS = [
     ),  # noqa; 24800
     Gatherproxy_com_socks(proto=('SOCKS4', 'SOCKS5')),  # noqa; 30
     Blogspot_com_socks(proto=('SOCKS4', 'SOCKS5')),  # noqa; 1486
-    Tools_rosinstrument_com(
-        proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')
-    ),  # noqa; 4000
-    Tools_rosinstrument_com_socks(proto=('SOCKS4', 'SOCKS5')),  # noqa; 1800
+    # Tools_rosinstrument_com(
+    #     proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')
+    # ),  # noqa; 4000
+    #Tools_rosinstrument_com_socks(proto=('SOCKS4', 'SOCKS5')),  # noqa; 1800
     My_proxy_com(max_conn=2),  # noqa; 1000
     Checkerproxy_net(),  # noqa; 60000
     Aliveproxy_com(),  # noqa; 210
@@ -800,12 +800,12 @@ PROVIDERS = [
     # Provider(url='http://proxydb.net/',
     #          proto=('HTTP', 'CONNECT:80', 'HTTPS',
     #                'CONNECT:25', 'SOCKS4', 'SOCKS5')),
-    # Provider(url='http://www.cybersyndrome.net/pla6.html',
-    #          proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 1100
-    # Provider(url='https://www.ip-adress.com/proxy-list',
-    #          proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 57
-    # Provider(url='https://www.marcosbl.com/lab/proxies/',
-    #          proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 89
+    Provider(url='http://www.cybersyndrome.net/pla6.html',
+             proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 1100
+    Provider(url='https://www.ip-adress.com/proxy-list',
+             proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 57
+    Provider(url='https://www.marcosbl.com/lab/proxies/',
+             proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 89
     # Provider(url='http://go4free.xyz/Free-Proxy/',
     #          proto=('HTTP', 'CONNECT:80', 'HTTPS', 'CONNECT:25')),  # 196
     # Provider(url='http://blackstarsecurity.com/proxy-list.txt'),  # 7014
