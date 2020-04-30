@@ -18,7 +18,7 @@ from .utils import IPPortPatternLine, log
 GRAB_PAUSE = 180
 
 # The maximum number of providers that are parsed concurrently
-MAX_CONCURRENT_PROVIDERS = 3
+MAX_CONCURRENT_PROVIDERS = 6
 
 
 class Broker:
